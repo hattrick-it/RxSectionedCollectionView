@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RxSectionedCollectionView_Example' do
+  pod 'RxSectionedCollectionView', :path => '../'
+
+  target 'RxSectionedCollectionView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
