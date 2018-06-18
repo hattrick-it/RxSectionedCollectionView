@@ -1,0 +1,16 @@
+PODS:
+  - RxSectionedCollectionView (0.1.0)
+
+DEPENDENCIES:
+  - RxSectionedCollectionView (from `../`)
+
+EXTERNAL SOURCES:
+  RxSectionedCollectionView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RxSectionedCollectionView: 2f18ed24b674604357a174cf1bd47b4e1e704f41
+
+PODFILE CHECKSUM: c5fea673401abd7699c95e5a3f58aa41b88850dc
+
+COCOAPODS: 1.5.0

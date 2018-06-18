@@ -1,0 +1,6 @@
+framework module RxSectionedCollectionView {
+  umbrella header "RxSectionedCollectionView-umbrella.h"
+
+  export *
+  module * { export * }
+}
