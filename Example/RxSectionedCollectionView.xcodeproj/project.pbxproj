@@ -8,10 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		10B66CAD14DF1849C749ED90 /* Pods_RxSectionedCollectionView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6907AB74ECC84B6879C1A0 /* Pods_RxSectionedCollectionView_Tests.framework */; };
+		38278BE220DBD6F000389A8A /* MyCustomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38278BE120DBD6F000389A8A /* MyCustomData.swift */; };
+		38278BE420DBD6F800389A8A /* MySectionOfCustomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38278BE320DBD6F800389A8A /* MySectionOfCustomData.swift */; };
+		38278BE620DBD70D00389A8A /* HeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38278BE520DBD70D00389A8A /* HeaderViewCell.xib */; };
+		38278BE820DBD71700389A8A /* HeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38278BE720DBD71600389A8A /* HeaderViewCell.swift */; };
+		38278BEA20DBD72100389A8A /* FooterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38278BE920DBD72100389A8A /* FooterViewCell.xib */; };
+		38278BEC20DBD72A00389A8A /* FooterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38278BEB20DBD72A00389A8A /* FooterViewCell.swift */; };
+		38278BEE20DBD73900389A8A /* CustomItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38278BED20DBD73900389A8A /* CustomItemCollectionViewCell.xib */; };
+		38278BF020DBD74600389A8A /* CustomItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38278BEF20DBD74500389A8A /* CustomItemCollectionViewCell.swift */; };
+		38278BF220DBD75400389A8A /* SectionedCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38278BF120DBD75400389A8A /* SectionedCollectionViewController.xib */; };
+		38278BF420DBD75E00389A8A /* SectionedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38278BF320DBD75E00389A8A /* SectionedCollectionViewController.swift */; };
 		42C1BDAE329EBE1B7406B24B /* Pods_RxSectionedCollectionView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0ECAF114387917112E4771 /* Pods_RxSectionedCollectionView_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
@@ -29,13 +37,21 @@
 
 /* Begin PBXFileReference section */
 		142F83E2BEA025C91B39894A /* Pods-RxSectionedCollectionView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSectionedCollectionView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSectionedCollectionView_Example/Pods-RxSectionedCollectionView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		38278BE120DBD6F000389A8A /* MyCustomData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomData.swift; sourceTree = "<group>"; };
+		38278BE320DBD6F800389A8A /* MySectionOfCustomData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySectionOfCustomData.swift; sourceTree = "<group>"; };
+		38278BE520DBD70D00389A8A /* HeaderViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderViewCell.xib; path = Views/HeaderViewCell.xib; sourceTree = "<group>"; };
+		38278BE720DBD71600389A8A /* HeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderViewCell.swift; path = Views/HeaderViewCell.swift; sourceTree = "<group>"; };
+		38278BE920DBD72100389A8A /* FooterViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FooterViewCell.xib; path = Views/FooterViewCell.xib; sourceTree = "<group>"; };
+		38278BEB20DBD72A00389A8A /* FooterViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FooterViewCell.swift; path = Views/FooterViewCell.swift; sourceTree = "<group>"; };
+		38278BED20DBD73900389A8A /* CustomItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomItemCollectionViewCell.xib; path = Views/CustomItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		38278BEF20DBD74500389A8A /* CustomItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomItemCollectionViewCell.swift; path = Views/CustomItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		38278BF120DBD75400389A8A /* SectionedCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SectionedCollectionViewController.xib; path = ViewControllers/SectionedCollectionViewController.xib; sourceTree = "<group>"; };
+		38278BF320DBD75E00389A8A /* SectionedCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SectionedCollectionViewController.swift; path = ViewControllers/SectionedCollectionViewController.swift; sourceTree = "<group>"; };
 		4FA34EFAA931F9DE84579E90 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		570DFF1879E2A654790BA302 /* Pods-RxSectionedCollectionView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSectionedCollectionView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSectionedCollectionView_Example/Pods-RxSectionedCollectionView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RxSectionedCollectionView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSectionedCollectionView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* RxSectionedCollectionView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSectionedCollectionView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +85,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38297D6C20DAF4FA00C9DB5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38278BE320DBD6F800389A8A /* MySectionOfCustomData.swift */,
+				38278BE120DBD6F000389A8A /* MyCustomData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		38297D6D20DAF50C00C9DB5A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				38278BF320DBD75E00389A8A /* SectionedCollectionViewController.swift */,
+				38278BF120DBD75400389A8A /* SectionedCollectionViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		385E47FD20DAF5F90053947D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				38278BEF20DBD74500389A8A /* CustomItemCollectionViewCell.swift */,
+				38278BED20DBD73900389A8A /* CustomItemCollectionViewCell.xib */,
+				38278BEB20DBD72A00389A8A /* FooterViewCell.swift */,
+				38278BE920DBD72100389A8A /* FooterViewCell.xib */,
+				38278BE720DBD71600389A8A /* HeaderViewCell.swift */,
+				38278BE520DBD70D00389A8A /* HeaderViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		4D6CEC4BC71AB7AA002018F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,9 +149,10 @@
 		607FACD21AFB9204008FA782 /* Example for RxSectionedCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				38297D6D20DAF50C00C9DB5A /* ViewControllers */,
+				385E47FD20DAF5F90053947D /* Views */,
+				38297D6C20DAF4FA00C9DB5A /* Model */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -212,6 +260,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = S84RM8A475;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -245,9 +294,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				38278BEE20DBD73900389A8A /* CustomItemCollectionViewCell.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				38278BEA20DBD72100389A8A /* FooterViewCell.xib in Resources */,
+				38278BF220DBD75400389A8A /* SectionedCollectionViewController.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				38278BE620DBD70D00389A8A /* HeaderViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +338,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSectionedCollectionView_Example/Pods-RxSectionedCollectionView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSectionedCollectionView/RxSectionedCollectionView.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SectionedCollectionView/SectionedCollectionView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSectionedCollectionView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SectionedCollectionView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -322,8 +380,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				38278BE220DBD6F000389A8A /* MyCustomData.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				38278BF420DBD75E00389A8A /* SectionedCollectionViewController.swift in Sources */,
+				38278BE420DBD6F800389A8A /* MySectionOfCustomData.swift in Sources */,
+				38278BF020DBD74600389A8A /* CustomItemCollectionViewCell.swift in Sources */,
+				38278BE820DBD71700389A8A /* HeaderViewCell.swift in Sources */,
+				38278BEC20DBD72A00389A8A /* FooterViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,14 +409,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -469,6 +524,7 @@
 			baseConfigurationReference = 570DFF1879E2A654790BA302 /* Pods-RxSectionedCollectionView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S84RM8A475;
 				INFOPLIST_FILE = RxSectionedCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -484,6 +540,7 @@
 			baseConfigurationReference = 142F83E2BEA025C91B39894A /* Pods-RxSectionedCollectionView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S84RM8A475;
 				INFOPLIST_FILE = RxSectionedCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
