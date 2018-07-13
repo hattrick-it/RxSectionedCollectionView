@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxSectionedCollectionView'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'RxSwift bindings for SectionedCollectionView'
 
 # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ RxSwift bindings for [SectionedCollectionView]
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'SectionedCollectionView', '~> 1.0.1'
+  s.dependency 'SectionedCollectionView', '~> 1.1.0'
   s.dependency 'RxSwift', '~> 4.0'
   s.dependency 'RxCocoa', '~> 4.0'
 end
