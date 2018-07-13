@@ -22,6 +22,36 @@ extension Reactive where Base: SectionedCollectionView {
         }
     }
     
+    public var selectItem: Binder<IndexPath> {
+        return Binder(self.base) { (view, indexPath) -> () in
+            view.selectItem(indexPath)
+        }
+    }
+    
+    public var selectItems: Binder<[IndexPath]> {
+        return Binder(self.base) { (view, indexPaths) -> () in
+            view.selectItems(indexPaths)
+        }
+    }
+    
+    public var deselectItem: Binder<IndexPath> {
+        return Binder(self.base) { (view, indexPath) -> () in
+            view.deselectItem(indexPath)
+        }
+    }
+    
+    public var deselectItems: Binder<[IndexPath]> {
+        return Binder(self.base) { (view, indexPaths) -> () in
+            view.deselectItems(indexPaths)
+        }
+    }
+    
+    public var deselectAllItems: Binder<Void> {
+        return Binder(self.base) { (view, _) -> () in
+            view.deselectAllItems()
+        }
+    }
+    
     public func selectedItems<T: Selectable>() -> Observable<[T]> {
         return self.delegate.methodInvoked(#selector(SectionedCollectionViewDelegate.selectedItems(selected:)))
             .map{ a in
