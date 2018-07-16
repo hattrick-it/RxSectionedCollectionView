@@ -4,23 +4,29 @@ PODS:
   - RxSectionedCollectionView (1.1.0):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-    - SectionedCollectionView (~> 1.1.0)
+    - SectionedCollectionView (~> 1.1.1)
   - RxSwift (4.2.0)
-  - SectionedCollectionView (1.1.0)
+  - SectionedCollectionView (1.1.1)
 
 DEPENDENCIES:
   - RxSectionedCollectionView (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RxCocoa
+    - RxSwift
+    - SectionedCollectionView
+
 EXTERNAL SOURCES:
   RxSectionedCollectionView:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
-  RxSectionedCollectionView: f2a95774ac95f8a53535d0a5a2493cafc9f608ed
+  RxSectionedCollectionView: f926820f4c7942850a32eb9f4c5120037183cf60
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
-  SectionedCollectionView: 5b8c3530001a31fdc7b63d1070741ac182376917
+  SectionedCollectionView: 78d3fc624d1be5d9f10f69c308c98705167ef029
 
 PODFILE CHECKSUM: c5fea673401abd7699c95e5a3f58aa41b88850dc
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
