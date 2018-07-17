@@ -1,12 +1,12 @@
 PODS:
   - RxCocoa (4.2.0):
     - RxSwift (~> 4.0)
-  - RxSectionedCollectionView (1.1.0):
+  - RxSectionedCollectionView (1.1.2):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-    - SectionedCollectionView (~> 1.1.1)
+    - SectionedCollectionView (~> 1.1.2)
   - RxSwift (4.2.0)
-  - SectionedCollectionView (1.1.1)
+  - SectionedCollectionView (1.1.2)
 
 DEPENDENCIES:
   - RxSectionedCollectionView (from `../`)
@@ -23,9 +23,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
-  RxSectionedCollectionView: f926820f4c7942850a32eb9f4c5120037183cf60
+  RxSectionedCollectionView: d843168be1cafc17128f2cd7c0ad5c71ae024ea8
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
-  SectionedCollectionView: 78d3fc624d1be5d9f10f69c308c98705167ef029
+  SectionedCollectionView: 7d7e6e22594e0b45bb6cc2e1a976b3627082500e
 
 PODFILE CHECKSUM: c5fea673401abd7699c95e5a3f58aa41b88850dc
 
