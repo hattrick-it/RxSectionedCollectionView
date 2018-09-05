@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,8 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SectionedCollectionViewController" customModule="SectionedCollectionView_Example" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SectionedCollectionViewController" customModule="RxSectionedCollectionView_Example" customModuleProvider="target">
             <connections>
+                <outlet property="reloadButton" destination="Vx7-r8-JgT" id="mDO-Ao-wCZ"/>
                 <outlet property="sectionedCollectionView" destination="IaG-53-9kf" id="o1V-LC-dbo"/>
                 <outlet property="view" destination="iN0-l3-epB" id="NOh-s3-Mgr"/>
             </connections>
@@ -21,17 +22,60 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaG-53-9kf" customClass="SectionedCollectionView" customModule="SectionedCollectionView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZnI-TD-mzR">
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SDF-cy-71r">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppG-vt-V7F">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaG-53-9kf" customClass="SectionedCollectionView" customModule="SectionedCollectionView">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="IaG-53-9kf" firstAttribute="top" secondItem="ppG-vt-V7F" secondAttribute="top" id="HBH-qg-AFK"/>
+                                        <constraint firstAttribute="bottom" secondItem="IaG-53-9kf" secondAttribute="bottom" id="ewx-CM-z6l"/>
+                                        <constraint firstAttribute="trailing" secondItem="IaG-53-9kf" secondAttribute="trailing" id="fxa-OY-ddA"/>
+                                        <constraint firstItem="IaG-53-9kf" firstAttribute="leading" secondItem="ppG-vt-V7F" secondAttribute="leading" id="hi6-QS-hXS"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ppG-vt-V7F" firstAttribute="top" secondItem="SDF-cy-71r" secondAttribute="top" id="5UA-H9-3uJ"/>
+                                <constraint firstAttribute="trailing" secondItem="ppG-vt-V7F" secondAttribute="trailing" id="WJt-08-sPU"/>
+                                <constraint firstAttribute="bottom" secondItem="ppG-vt-V7F" secondAttribute="bottom" id="Xbb-Br-EfH"/>
+                                <constraint firstItem="ppG-vt-V7F" firstAttribute="width" secondItem="SDF-cy-71r" secondAttribute="width" id="e4V-0c-UCg"/>
+                                <constraint firstItem="ppG-vt-V7F" firstAttribute="leading" secondItem="SDF-cy-71r" secondAttribute="leading" id="loy-2h-cz9"/>
+                                <constraint firstItem="ppG-vt-V7F" firstAttribute="height" secondItem="SDF-cy-71r" secondAttribute="height" placeholder="YES" id="oIK-PX-L60"/>
+                            </constraints>
+                        </scrollView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vx7-r8-JgT">
+                            <rect key="frame" x="328" y="0.0" width="47" height="30"/>
+                            <state key="normal" title="Reload"/>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="SDF-cy-71r" secondAttribute="trailing" id="DkF-5h-FIM"/>
+                        <constraint firstAttribute="trailing" secondItem="Vx7-r8-JgT" secondAttribute="trailing" id="Qo2-Qp-4k4"/>
+                        <constraint firstItem="Vx7-r8-JgT" firstAttribute="top" secondItem="ZnI-TD-mzR" secondAttribute="top" id="cVj-hM-nva"/>
+                        <constraint firstItem="SDF-cy-71r" firstAttribute="leading" secondItem="ZnI-TD-mzR" secondAttribute="leading" id="eJ5-vd-b3O"/>
+                        <constraint firstItem="SDF-cy-71r" firstAttribute="top" secondItem="ZnI-TD-mzR" secondAttribute="top" id="sfV-2a-pCX"/>
+                        <constraint firstAttribute="bottom" secondItem="SDF-cy-71r" secondAttribute="bottom" id="tMP-KT-Rxx"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="IaG-53-9kf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="DgX-nn-KuX"/>
-                <constraint firstItem="IaG-53-9kf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="J9p-G5-iS5"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IaG-53-9kf" secondAttribute="trailing" id="ZD3-qo-5fH"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IaG-53-9kf" secondAttribute="bottom" id="d6s-Uf-Z07"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ZnI-TD-mzR" secondAttribute="bottom" id="Kdd-et-ZSw"/>
+                <constraint firstItem="ZnI-TD-mzR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="WKR-Ct-DrB"/>
+                <constraint firstItem="ZnI-TD-mzR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eGT-FY-aly"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZnI-TD-mzR" secondAttribute="trailing" id="itu-mm-19U"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="34.5" y="53.5"/>
