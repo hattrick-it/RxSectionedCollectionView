@@ -114,6 +114,14 @@ public class SectionedCollectionView: UIView {
     public func setDataSource(sections: [SectionOfCustomData]) {
         self.sections = sections
         self.collectionView.reloadData()
+        
+        if(!settings.style.scrollEnabled) {
+            guard let collectionViewFlowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
+                return
+            }
+            heightConstraint?.constant = collectionViewFlowLayout.collectionViewContentSize.height
+            superview?.layoutIfNeeded()
+        }
     }
     
     public func selectItem(_ indexPath: IndexPath) {
@@ -176,6 +184,11 @@ public class SectionedCollectionView: UIView {
         if(!settings.style.scrollEnabled) {
             heightConstraint = NSLayoutConstraint(item: collectionView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 10)
             self.addConstraint(heightConstraint!)
+            guard let collectionViewFlowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
+                return
+            }
+            heightConstraint?.constant = collectionViewFlowLayout.collectionViewContentSize.height
+            superview?.layoutIfNeeded()
         }
     }
     
